@@ -1,0 +1,389 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: lightblue;
+}
+
+section{
+    position: relative;
+    width: 980px;
+    height: 551px;
+    margin: 0 auto;
+    margin-top: 5%;
+    overflow-x: hidden;
+}
+
+img{position: absolute;}
+
+.fond{
+    z-index: 3;
+}
+
+.tronc{
+    z-index: 12;
+}
+
+.nuage1{
+    z-index: 10;
+    transform-origin: center;
+    animation: nuage1 45s infinite;
+    filter: blur(1px);
+}
+
+@keyframes nuage1{
+    0%{left: 110%;}
+    100%{left: -30%;}
+}
+
+.nuage2{
+    top: 80px;
+    z-index: 5;
+    transform-origin: left center;
+    animation: nuage2 50s infinite;
+    filter: blur(1px);
+}
+
+@keyframes nuage2{
+    0%{left: 120%;}
+    100%{left: -15%;}
+}
+
+.nuage3{
+    top: 40px;
+    z-index: 6;
+    transform: rotate(180deg);
+    transform-origin: center;
+    filter: blur(1px);
+    animation: nuage3 100s infinite;
+}
+
+@keyframes nuage3{
+    0%{left: 10%;z-index: 5}
+    24%{left: -30%;z-index: 5;}
+    25%{left: -30%;z-index: 1;}
+    50%{left: 115%;z-index: 1}
+    51%{left: 115%;z-index: 5}
+    100%{left: 10%;z-index: 5}
+}
+
+.nuage4{
+    top: 50px;
+    z-index: 6;
+    transform: rotate(180deg);
+    transform-origin: center;
+    filter: blur(1px);
+    animation: nuage4 152s infinite;
+}
+
+@keyframes nuage4{
+    0%{left: 40%;z-index: 5}
+    24%{left: -30%;z-index: 5;}
+    25%{left: -30%;z-index: 1;}
+    50%{left: 115%;z-index: 1}
+    51%{left: 115%;z-index: 5}
+    100%{left: 40%;z-index: 5}
+}
+
+.sac{
+    z-index: 15;
+    top: 385px;
+    left: 650px;
+    transform-origin: top right;
+    animation: sac 7s infinite;
+}
+
+@keyframes sac{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(-10deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.brasCanne{
+   z-index: 17; 
+    left: 520px;
+    top: 190px;
+    animation: brasCanne 4s infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes brasCanne{
+    0%{transform: rotate(-12deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(-12deg);}
+}
+
+.ligne1{
+    z-index: 200;
+    width: 3px;
+    background-color: white;
+    height: 240px;
+    opacity: 0.3;
+    position: absolute;
+    top: 199px;
+    animation: ligne1 4s infinite;
+}
+
+@keyframes ligne1{
+    0%{height: 230px; left: 540px; top: 188px;}
+    50%{height: 280px; left: 565px; top: 197px;}
+    100%{height: 230px; left: 540px; top: 188px;}
+}
+
+.tetefille{
+    z-index: 146;
+    left: 550px;
+    top: 240px;
+    transform-origin: center;
+     animation: bras 4s infinite;
+}
+.petitbras{
+    z-index: 148;
+    left: 485px;
+    top: 350px;
+    transform-origin: top left;
+    animation: bras 1s infinite;
+}
+
+@keyframes bras{
+    0%{transform: rotate(-5deg);}
+    50%{transform: rotate(5deg);}
+    100%{transform: rotate(-5deg);}
+}
+
+.piedfille{
+    z-index: 150;
+    left: 473px;
+    top: 340px;
+}
+
+.homard{
+    z-index: 300;
+    animation: homard 4s infinite;
+}
+
+@keyframes homard{
+    0%{left: 523px; top: 410px;}
+    50%{left: 545px; top: 463px;}
+    100%{left: 523px; top: 410px;}
+}
+
+.queue{
+    z-index: 19;
+    top: 410px;
+    left: 340px;
+    animation: queue 2s infinite;
+    transform-origin: top center;
+}
+
+@keyframes queue{
+    0%{transform: rotate(20deg);}
+    50%{transform: rotate(-20deg);}
+    100%{transform: rotate(20deg);}
+}
+
+
+.branche{
+    z-index: 20;
+    top: 240px;
+    left: 270px;
+}
+
+
+.brasBlue{
+    z-index: 25;
+    left:612px;
+    top:190px;
+    animation: batonBleu 1s infinite;
+    transform-origin: right bottom
+}
+
+@keyframes batonBleu{
+    0%{transform: rotate(20deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(20deg);}
+}
+
+.blueBon{
+    z-index: 30;
+    left: 660px;
+    top: 155px;
+}
+
+.tetetotoro{
+    z-index: 100;
+    top: 55px;
+    left: 250px;
+}
+
+.sousOeil{
+    z-index: 130;
+    left: 322px;
+    top: 138px;
+}
+
+.oeil1{
+    z-index: 200;
+    left: 416px;
+    top: 145px;
+    animation: oeil 4s infinite;
+    transform-origin: center right;
+}
+
+@keyframes oeil{
+    0%{transform: rotate(-50deg);}
+    50%{transform: rotate(10deg);}
+    100%{transform: rotate(-50deg);}
+}
+
+.oeil2{
+    z-index: 200;
+    left: 334px;
+    top: 150px;
+    animation: oeil2 4s infinite;
+    transform-origin: center left;
+}
+
+@keyframes oeil2{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-50deg);}
+    100%{transform: rotate(10deg);}
+}
+
+.mou1,
+.mou2,
+.mou3,
+.mou4,
+.mou5,
+.mou6{
+    z-index: 180;
+}
+
+.mou1{
+    top: 180px;
+    left: 247px;
+    transform-origin: right center;
+    animation: mou 6s infinite;
+}
+
+@keyframes mou{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(10deg);}
+}
+
+.mou2{
+    top: 165px;
+    left: 240px;
+    transform-origin: right center;
+    animation: mou 5.5s infinite;
+}
+
+
+.mou3{
+    top: 152px;
+    left: 255px;
+    transform-origin: right center;
+    animation: mou 5s infinite;
+}
+
+.mou4{
+    top: 177px;
+    left: 440px;
+    transform-origin: left center;
+    animation: mou2 6s infinite;
+}
+
+.mou5{
+    top: 165px;
+    left: 438px;
+    transform-origin: left bottom;
+    animation: mou2 5s infinite;
+}
+
+.mou6{
+    top: 145px;
+    left: 438px;
+    transform-origin: left center;
+    animation: mou2 5.5s infinite;
+}
+@keyframes mou2{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(10deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.fleur{
+    z-index: 200;
+    animation: fleur 4s infinite;
+    transform-origin: center;
+}
+
+@keyframes fleur{
+    0%{top: 170px; left: 380px; transform: rotate(0deg);}
+    50%{top: 105px; left: 365px; transform: rotate(-20deg);}
+    100%{top: 170px; left: 380px;transform: rotate(0deg);}
+}
+
+.patte1{
+    z-index: 250;
+    left: 390px;
+    top: 340px;
+    transform-origin: top right;
+    animation: patteDroite 3s infinite;
+}
+
+@keyframes patteDroite{
+    0%{transform: rotate(-20deg)}
+    50%{transform: rotate(-10deg)}
+    100%{transform: rotate(-20deg)}
+}
+
+.patte2{
+    z-index: 240;
+    left: 285px;
+    top: 350px;
+    animation: patteGauche 3s infinite;
+    transform-origin: top left;
+}
+
+@keyframes patteGauche{
+    0%{transform: rotate(5deg)}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(5deg)}
+}
+
+.canneBlanc{
+    z-index: 150;
+    top: 20px;
+    left: 388px;
+    animation: canneBlanc 4s infinite;
+    transform-origin: left bottom;
+}
+
+@keyframes canneBlanc{
+    0%{transform: rotate(5deg)}
+    50%{transform: rotate(-10deg)}
+    100%{transform: rotate(5deg)}
+}
+
+.ligne2{
+    z-index: 140;
+    width: 2px;
+    background-color: white;
+    opacity: 0.3;
+    position: absolute;
+    top: 24px;
+    left: 403px; 
+    animation: ligne2 4s infinite;
+}
+
+@keyframes ligne2{
+    0%{height: 155px; left:407px; }
+    50%{height: 90px; left:392px;}
+    100%{height: 155px; left:407px;}
+}
+
+
+
+
+
